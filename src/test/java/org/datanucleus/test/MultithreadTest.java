@@ -1,14 +1,17 @@
 package org.datanucleus.test;
 
-import org.junit.*;
-import javax.jdo.*;
-
-import static org.junit.Assert.*;
-import mydomain.model.*;
+import javax.jdo.JDOHelper;
+import javax.jdo.PersistenceManager;
+import javax.jdo.PersistenceManagerFactory;
+import javax.jdo.Transaction;
 import org.datanucleus.util.NucleusLogger;
+import org.junit.Ignore;
+import org.junit.Test;
+import static org.junit.Assert.fail;
 
 public class MultithreadTest
 {
+    @Ignore
     @Test
     public void testMulti()
     {
